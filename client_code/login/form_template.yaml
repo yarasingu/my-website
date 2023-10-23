@@ -1,0 +1,52 @@
+is_package: true
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html'}
+components:
+- type: ColumnPanel
+  properties: {}
+  name: content_panel
+  layout_properties: {slot: default}
+  components:
+  - name: spacer_1_copy_1
+    properties: {height: 43}
+    type: Spacer
+    layout_properties: {grid_position: 'WVGJVM,JPKXXF'}
+  - name: label_2
+    properties: {text: Login page, align: right, bold: true, underline: true, font_size: 26}
+    type: Label
+    layout_properties: {grid_position: 'UIRALV,PKWURV'}
+  - name: signup_home_link_copy_1
+    properties: {align: right, bold: true, text: Home}
+    type: Link
+    layout_properties: {grid_position: 'UIRALV,ECETCY'}
+    event_bindings: {click: signup_home_link_click}
+  - name: spacer_1
+    properties: {height: 32}
+    type: Spacer
+    layout_properties: {grid_position: 'LBKYZW,OFOIAV'}
+  - name: label_3
+    properties: {text: Mobile or Email, bold: true, align: center}
+    type: Label
+    layout_properties: {grid_position: 'KEUYJZ,ZSINXR JANTUW,TQWABO'}
+  - name: email_or_name_lable
+    properties: {text: Password, align: center, bold: true}
+    type: Label
+    layout_properties: {grid_position: 'KEUYJZ,ZSINXR RJZUOF,GKMJQV'}
+  - name: forgotpasscode_link
+    properties: {text: forgot_password, underline: true, bold: true, align: center}
+    type: Link
+    layout_properties: {grid_position: 'KEUYJZ,ZSINXR LCAIKM,UHVQYO'}
+  - name: full_name_text
+    properties: {text: '', placeholder: 'Enter Mobil or Email '}
+    type: TextBox
+    layout_properties: {grid_position: 'KEUYJZ,IINVHK XELFNQ,HTBWFP'}
+  - name: mobile_no_text
+    properties: {placeholder: Enter Passcode}
+    type: TextBox
+    layout_properties: {grid_position: 'KEUYJZ,IINVHK CFCGSV,PKXKVO'}
+  - name: login_submit
+    properties: {text: Submit, align: right, bold: true}
+    type: Button
+    layout_properties: {grid_position: 'KEUYJZ,IINVHK PKQIFF,BKAHHY'}
+    event_bindings: {click: login_submit_click}

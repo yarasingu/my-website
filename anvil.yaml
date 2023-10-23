@@ -1,6 +1,33 @@
 allow_embedding: false
 package_name: Custom_HTML_1
-startup: {type: form, module: Form1}
+db_schema:
+  amigos:
+    client: none
+    server: full
+    columns:
+    - name: amigos_id
+      admin_ui: {width: 200, order: 0}
+      type: number
+    - name: full_name
+      admin_ui: {width: 200, order: 1}
+      type: string
+    - name: mobile_no
+      admin_ui: {width: 200, order: 2}
+      type: string
+    - name: email
+      admin_ui: {width: 200, order: 3}
+      type: string
+    - name: dob
+      admin_ui: {width: 200, order: 4}
+      type: date
+    - name: gender
+      admin_ui: {width: 200, order: 5}
+      type: string
+    - name: photo
+      admin_ui: {width: 200, order: 6}
+      type: media
+    title: amigos
+startup: {type: form, module: sign_up}
 name: Custom HTML 1
 startup_form: null
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
