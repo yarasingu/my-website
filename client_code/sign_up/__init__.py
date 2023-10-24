@@ -23,13 +23,24 @@ class sign_up(sign_upTemplate):
     dob = self.dob_date.date
     gender = self.dropdown_for_gender.selected_value
     photo_blob = self.photo_uploader_file.file
-    anvil.server.call('add_amigo', full_name, mobile_no, email, dob, gender, photo_blob)
-    alert("you data was submit sucessfully")
-    open_form('home')
+    if not full_name or not mobile_no or not email or not dob or not gender or not  photo_blob:
+      alert('please fill all Required fields ')
+    else:
+      anvil.server.call('add_amigo', full_name, mobile_no, email, dob, gender, photo_blob)
+      alert("you data was submit sucessfully")
+      open_form('home')
 
   def signup_clear_click(self, **event_args):
     self.full_name_text.text = None
     self.mobile_no_text.text = None
+    self.emmail_text.text = None
+    self.dob_date.date = None
+    self.dropdown_for_gender.selected_value = None
+    #self.photo_uploader_file.file = None
+
+
+
+    
     
 
 

@@ -65,10 +65,13 @@ components:
     properties:
       items: [Male, Female, Others]
       bold: true
+      include_placeholder: true
+      placeholder: Select
     type: DropDown
     layout_properties: {grid_position: 'KEUYJZ,IINVHK SHJION,PNKTHD'}
+    event_bindings: {}
   - name: photo_uploader_file
-    properties: {}
+    properties: {multiple: true, bold: true}
     type: FileLoader
     layout_properties: {grid_position: 'KEUYJZ,IINVHK LGCQTJ,UVYBVI'}
   - name: signup_clear

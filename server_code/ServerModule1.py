@@ -16,3 +16,8 @@ def add_amigo(full_name, mobile_no, email, dob, gender, photo_blob):
                             dob=dob,
                             gender=gender,
                             photo=photo_blob)
+
+
+
+
+
