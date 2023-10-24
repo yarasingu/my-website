@@ -26,9 +26,12 @@ components:
 - name: data_grid_1
   properties:
     columns:
-    - {id: JKSDUP, title: amigos_id, data_key: column_1}
-    - {id: VJQQOR, title: full_name, data_key: column_2}
-    - {id: OJLQEN, title: mobile_no, data_key: column_3}
+    - {id: JKSDUP, title: amigos_id, data_key: column_1, width: 110, expand: false}
+    - {id: VJQQOR, title: full_name, data_key: column_2, width: 160, expand: false}
+    - {id: OJLQEN, title: mobile_no, data_key: column_3, width: 115, expand: false}
+    - {id: RQPXIP, data_key: column_1, title: Column 1}
+    wrap_on: mobile
+    rows_per_page: 10
   type: DataGrid
   components:
   - name: repeating_panel_1

@@ -26,6 +26,12 @@ db_schema:
     - name: photo
       admin_ui: {width: 200, order: 6}
       type: media
+    - name: approve
+      admin_ui: {width: 200, order: 7}
+      type: bool
+    - name: first_signUp_time
+      admin_ui: {order: 8, width: 200}
+      type: datetime
     title: amigos
 startup: {type: form, module: sign_up}
 name: Custom HTML 1
