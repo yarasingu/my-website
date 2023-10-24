@@ -71,8 +71,13 @@ components:
     properties: {}
     type: FileLoader
     layout_properties: {grid_position: 'KEUYJZ,IINVHK LGCQTJ,UVYBVI'}
-  - name: signup_submit
-    properties: {text: Submit, align: right}
+  - name: signup_clear
+    properties: {text: Clear, align: right, bold: true}
     type: Button
-    layout_properties: {grid_position: 'KEUYJZ,IINVHK TQSMLR,NXQAYA'}
+    layout_properties: {grid_position: 'KEUYJZ,IINVHK MIORUB,ROUJJU'}
+    event_bindings: {click: signup_clear_click}
+  - name: signup_submit
+    properties: {text: Submit, align: right, bold: true}
+    type: Button
+    layout_properties: {grid_position: 'KEUYJZ,IINVHK MIORUB,CDVCQL'}
     event_bindings: {click: signup_submit_click}
