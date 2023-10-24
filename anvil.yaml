@@ -27,7 +27,7 @@ db_schema:
       admin_ui: {width: 200, order: 6}
       type: media
     title: amigos
-startup: {type: module, module: signup_module}
+startup: {type: form, module: sign_up}
 name: Custom HTML 1
 startup_form: null
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,

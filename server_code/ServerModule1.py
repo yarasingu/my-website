@@ -8,7 +8,6 @@ from anvil import BlobMedia
 
 @anvil.server.callable
 def add_amigo(full_name, mobile_no, email, dob, gender, photo_blob):
-  #photo = BlobMedia(content=photo_blob)
   app_tables.amigos.add_row(amigos_id=signup_module.generate_user_id(),
                             full_name=full_name,
                             mobile_no=mobile_no,
