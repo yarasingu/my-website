@@ -30,6 +30,7 @@ class sign_up(sign_upTemplate):
       alert("you data was submit sucessfully")
       open_form('home')
 
+  
   def signup_clear_click(self, **event_args):
     self.full_name_text.text = None
     self.mobile_no_text.text = None
