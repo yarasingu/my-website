@@ -13,15 +13,14 @@ def generate_user_id():
 
 
 def find_highest_amigos_id():
-    full_table = app_tables.amigos.search()
-    highest_id = 999  
-    
-    for row in full_table:
-        amigos_id = row['amigos_id']
-        if amigos_id > highest_id:
-            highest_id = amigos_id
+  full_table = app_tables.amigos.search()
+  highest_id = 999
+  for row in full_table:
+    amigos_id = row['amigos_id']
+    if amigos_id > highest_id:
+      highest_id = amigos_id
 
-    return highest_id
+  return highest_id
 
 highest_amigos_id = find_highest_amigos_id()
 
