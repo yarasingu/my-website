@@ -24,3 +24,4 @@ def find_highest_amigos_id():
 
 highest_amigos_id = find_highest_amigos_id()
 
+# how use this method  call function and store in some variable like generation_value = generate_user_id()
