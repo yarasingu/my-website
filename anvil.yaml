@@ -1,5 +1,5 @@
 allow_embedding: false
-package_name: Custom_HTML_1
+package_name: my_website
 db_schema:
   amigos:
     client: full
@@ -34,7 +34,7 @@ db_schema:
       type: datetime
     title: amigos
 startup: {type: form, module: sign_up}
-name: Custom HTML 1
+name: my_website
 startup_form: null
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
